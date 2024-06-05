@@ -28,10 +28,62 @@ function App() {
 //     }else{
 
 //     }console.log("unknown")
-  const arr1= [1,2,3,4]
-  for (let item of arr1){
-    console.log(item)
-  }
+  // const arr1= [1,2,3,4]
+  // for (let item of arr1){
+  //   console.log(item)
+  // }
+
+// const employee_Name = [
+//   { employee_name: "shashikant", age: 20 },
+//   { employee_name: "rahul kumar", age: 21},
+//   { employee_name: "parth kumar", age: 20},
+// ];
+
+// for (let item of employee_Name){
+//   console .log(item.employee_name)
+// }
+
+// employee_Name.forEach((person) =>{
+//   console.log(person.age)
+// })
+
+// const employee = {
+//   name: "vishal",
+//   age: 20,
+//   occupation: "b.tech"
+// };
+// for (const key in employee){
+//   if (employee.hasOwnProperty(key)){
+//     console.log(`${key}: ${employee[key]}`)
+//   }
+
+// }/
+// const employees = [
+//   {name: "rohan", age: 18, salary: 45 },
+//   {name: "shivam", age: 22, salary: 50 },
+//   {name: "sunil", age: 22, salary: 55 },
+//   {name: "parth", age: 23, salary: 43},
+// ];
+// const mappedEmployees = employees.map((item) => {
+//   return {
+
+//     ...item,
+//     SALARY: item.salary + 10000,
+//   };
+// }, [])
+
+// console.log("employees", employees);
+// console.log("mappedEmployee", mappedEmployees);
+
+const  employee = [
+  {name: "suraj", age: 40, salary: 10,category:" mobile"},
+  {name: "niraj", age: 90, salary: 50,category: "cloth"},
+  {name: "nitin", age: 50, salary: 20,category: "laptop"},   
+  ];
+  const filteredEmployee = employee.filter((item)=>{
+    return item.category==="mobile";
+  });
+  console.log("filteredemployee",filteredEmployee);
   return (
     <div className="App">
       <header className="App-header">
